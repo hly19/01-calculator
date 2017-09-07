@@ -16,12 +16,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColorHint="@color/colorAccent"
-        android:hint="Enter a number" />
+        android:hint="Enter a number"
+        android:textColor="@color/colorPrimaryDark"/>
     <EditText
         android:id="@+id/num2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/enter_hint" />
+        android:hint="@string/enter_hint"
+        android:textColor="@color/colorPrimary"/>
 
     <Button
         android:id="@+id/add"
