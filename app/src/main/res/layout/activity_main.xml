@@ -51,6 +51,12 @@
         android:onClick="divNums"
         android:text="Divide" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clearAll"
+        android:text="Clear All"/>
+
     <TextView
         android:id="@+id/result"
         android:layout_width="wrap_content"

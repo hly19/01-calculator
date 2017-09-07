@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     }  //onCreate()
 
     public boolean validateInput(double num1, double num2){
+
         return false;
     }
     // TODO: input validation: set text to show error
@@ -79,5 +80,11 @@ public class MainActivity extends AppCompatActivity {
         else{
             result.setText("Invalid input. Numbers only.");
         }
+    }
+
+    public void clearAll(View v){
+        etNum1.setText("");
+        etNum2.setText("");
+        result.setText("The answer will be here");
     }
 }
