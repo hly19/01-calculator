@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColorHint="@color/colorAccent"
-        android:hint="@string/enter_hint" />
+        android:hint="Enter a number" />
     <EditText
         android:id="@+id/num2"
         android:layout_width="match_parent"
@@ -52,6 +52,7 @@
         android:text="Divide" />
 
     <Button
+        android:id="@+id/clearAll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="clearAll"
