@@ -22,12 +22,35 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/enter_hint" />
+
     <Button
         android:id="@+id/add"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="addNums"
         android:text="@string/add" />
+
+    <Button
+        android:id="@+id/substract"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="subNums"
+        android:text="Substract" />
+
+    <Button
+        android:id="@+id/multiply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="mulNums"
+        android:text="Multiply" />
+
+    <Button
+        android:id="@+id/divide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="divNums"
+        android:text="Divide" />
+
     <TextView
         android:id="@+id/result"
         android:layout_width="wrap_content"

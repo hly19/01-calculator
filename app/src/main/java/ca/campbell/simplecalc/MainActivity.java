@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     EditText etNum1, etNum2;
     TextView result;
     double num1, num2;
+    boolean valid;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,11 +29,55 @@ public class MainActivity extends AppCompatActivity {
         result = (TextView) findViewById(R.id.result);
     }  //onCreate()
 
+    public boolean validateInput(double num1, double num2){
+        return false;
+    }
     // TODO: input validation: set text to show error
     public void addNums(View v) {
-        num1 = Double.parseDouble(etNum1.getText().toString());
-        num2 = Double.parseDouble(etNum2.getText().toString());
-        result.setText(Double.toString(num1 + num2));
+        valid = validateInput(num1, num2);
+        if(valid) {
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+            result.setText(Double.toString(num1 + num2));
+        }
+        else{
+            result.setText("Invalid input. Numbers only.");
+        }
     }  //addNums()
 
+    public void subNums(View v){
+        valid = validateInput(num1, num2);
+        if(valid) {
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+            result.setText(Double.toString(num1 - num2));
+        }
+        else{
+            result.setText("Invalid input. Numbers only.");
+        }
+    }
+
+    public void mulNums(View v){
+        valid = validateInput(num1, num2);
+        if(valid) {
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+            result.setText(Double.toString(num1 * num2));
+        }
+        else{
+            result.setText("Invalid input. Numbers only.");
+        }
+    }
+
+    public void divNums(View v){
+        valid = validateInput(num1, num2);
+        if(valid) {
+            num1 = Double.parseDouble(etNum1.getText().toString());
+            num2 = Double.parseDouble(etNum2.getText().toString());
+            result.setText(Double.toString(num1 / num2));
+        }
+        else{
+            result.setText("Invalid input. Numbers only.");
+        }
+    }
 }
